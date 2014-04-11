@@ -5,6 +5,16 @@
 
 
 .navbar-default {
-border-color: none;
+border-color: #ffffff;
 background-color: #f3f4ef;
 }
+
+.navbar-default .navbar-nav>li>a {
+color: #333;
+font-weight: 500;
+}
+
+.navbar-default .navbar-brand {
+color: #000;
+}
+
