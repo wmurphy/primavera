@@ -12,9 +12,16 @@ background-color: #f3f4ef;
 .navbar-default .navbar-nav>li>a {
 color: #333;
 font-weight: 500;
+font-size: 17px;
 }
 
-.navbar-default .navbar-brand {
+.navbar-brand {
 color: #000;
+font-family: 'Denver';
+font-weight: bolder;
+font-size: 35px;
 }
 
+.navbar-header {
+	width: 100%;
+}
