@@ -22,6 +22,14 @@ font-weight: bolder;
 font-size: 35px;
 }
 
+.navbar-brand:hover{
+	color: #000;
+}
+
 .navbar-header {
 	width: 100%;
+}
+
+a.logo {
+	float: right !important;
 }
