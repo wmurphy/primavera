@@ -8,6 +8,7 @@
 	border-color: #ffffff;
 	background-color: #f3f4ef;
 	width: 100%;
+	color: #222;
 }
 
 .navbar-default .navbar-nav>li>a {
@@ -15,7 +16,10 @@
 	font-weight: 500;
 	font-size: 17px;
 }
-
+.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus{
+	color: #999;
+	background: transparent;
+}
 .navbar-brand {
 	color: #000;
 	font-family: 'Denver';
@@ -32,6 +36,10 @@
 	width: 100%;
 }
 
+div.navbar-collapse.collapse {
+	padding: 0;
+}
+
 a.logo {
 	float: right !important;
 }
@@ -42,7 +50,6 @@ a {
 
 a:hover{
 	color: #999;
-
 	text-decoration: none;
 }
 
@@ -62,6 +69,26 @@ div.field-item.even {
 	color: #999;
 }
 
+.nav>li>a {
+	position: relative;
+	display: block;
+	padding: 10px 15px 10PX 0;
+}
+
 .nav>li>a:hover, .nav>li>a:focus{
 	background: transparent;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
