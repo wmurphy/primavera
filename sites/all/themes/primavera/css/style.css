@@ -23,10 +23,11 @@
 	font-weight: 500;
 	font-size: 17px;
 }
-.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus,	.navbar-default .navbar-nav>li>a:active{
+.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus,	a.active-trail.active{
 	color: #999;
 	background: transparent;
 }
+
 .navbar-brand {
 	color: #000;
 	font-family: 'Denver';
@@ -95,6 +96,7 @@ div.field-item.even {
 ul.menu.nav {
 	text-align: center;
 }
+
 
 
 
