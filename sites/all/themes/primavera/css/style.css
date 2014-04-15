@@ -87,9 +87,14 @@ div.field-item.even {
 }
 
 
-
-
-
+ul li.leaf {
+	list-style: none;
+	display: inline-block;
+	background-image: url("../img/casas.png");
+}
+ul.menu.nav {
+	text-align: center;
+}
 
 
 
