@@ -87,7 +87,7 @@ div.field-item.even {
 }
 
 
-ul li.leaf {
+.region-footer ul li.leaf {
 	list-style: none;
 	display: inline-block;
 	background-image: url("../img/casas.png");
