@@ -21,6 +21,7 @@ color: #000;
 font-family: 'Denver';
 font-weight: bolder;
 font-size: 35px;
+padding-top: 40px;
 }
 
 .navbar-brand:hover{
@@ -33,4 +34,12 @@ font-size: 35px;
 
 a.logo {
 	float: right !important;
+}
+
+a {
+	color: #000;
+}
+
+a:hover{
+	color: #444;
 }
