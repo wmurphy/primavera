@@ -61,3 +61,7 @@ div.region.region-footer {
 div.field-item.even {
 	color: #999;
 }
+
+.nav>li>a:hover, .nav>li>a:focus{
+	background: transparent;
+}
