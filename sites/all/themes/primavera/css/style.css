@@ -5,23 +5,23 @@
 
 
 .navbar-default, .footer {
-border-color: #ffffff;
-background-color: #f3f4ef;
-width: 100%;
+	border-color: #ffffff;
+	background-color: #f3f4ef;
+	width: 100%;
 }
 
 .navbar-default .navbar-nav>li>a {
-color: #333;
-font-weight: 500;
-font-size: 17px;
+	color: #333;
+	font-weight: 500;
+	font-size: 17px;
 }
 
 .navbar-brand {
-color: #000;
-font-family: 'Denver';
-font-weight: bolder;
-font-size: 35px;
-padding-top: 40px;
+	color: #000;
+	font-family: 'Denver';
+	font-weight: bolder;
+	font-size: 35px;
+	padding-top: 40px;
 }
 
 .navbar-brand:hover{
@@ -42,4 +42,11 @@ a {
 
 a:hover{
 	color: #444;
+	font-weight: 500;
+}
+
+
+div.region.region-footer {
+	max-width: 1170px;
+	margin: 0 auto;
 }
