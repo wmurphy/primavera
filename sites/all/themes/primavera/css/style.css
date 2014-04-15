@@ -10,6 +10,13 @@
 	width: 100%;
 	color: #222;
 }
+.navbar-default .navbar-brand{
+	color: #222;
+}
+
+.navbar-default .navbar-brand:hover{
+	color: #999;
+}
 
 .navbar-default .navbar-nav>li>a {
 	color: #333;
@@ -72,7 +79,7 @@ div.field-item.even {
 .nav>li>a {
 	position: relative;
 	display: block;
-	padding: 10px 15px 10PX 0;
+	padding: 10px 20px 10px 0;
 }
 
 .nav>li>a:hover, .nav>li>a:focus{
