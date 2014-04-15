@@ -11,7 +11,7 @@
 	color: #222;
 }
 .navbar-default .navbar-brand{
-	color: #222;
+	color: #444;
 }
 
 .navbar-default .navbar-brand:hover{
@@ -23,7 +23,7 @@
 	font-weight: 500;
 	font-size: 17px;
 }
-.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus{
+.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus,	.navbar-default .navbar-nav>li>a:active{
 	color: #999;
 	background: transparent;
 }
@@ -44,7 +44,7 @@
 }
 
 div.navbar-collapse.collapse {
-	padding: 0;
+	padding: 0 0 15px 0;
 }
 
 a.logo {
