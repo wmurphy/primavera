@@ -1,18 +1,20 @@
-<div id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
+<?php
 
-  <?php print $user_picture; ?>
+  hide($content['field_fachada_bar']);
+  hide($content['locations']);
 
-  <?php print render($title_prefix); ?>
-  <?php if (!$page): ?>
-    <h2<?php print $title_attributes; ?>><a href="<?php print $node_url; ?>"><?php print $title; ?></a></h2>
-  <?php endif; ?>
-  <?php print render($title_suffix); ?>
 
-  <?php if ($display_submitted): ?>
-    <div class="submitted">
-      <?php print $submitted; ?>
-    </div>
-  <?php endif; ?>
+  hide($content['field_descripcion_concierto']);
+  hide($content['field_fecha_concierto']);
+  hide($content['field_grupo']);
+
+  hide($content['field_descripcion_bar']);
+  hide($content['field_barrio']);
+  hide($content['field_grupo']);
+  hide($content['field_banda']);
+
+?><div id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
+
 
   <div class="content"<?php print $content_attributes; ?>>
 <?php
@@ -35,9 +37,32 @@ $field_fachada_bar = file_create_url($content['field_fachada_bar'][0]['#item']['
 //print render($content['field_fachada_bar'][0];
 ?>
 <div class="row">
-<div class="col-md-4"><img src="<?php echo $field_fachada_bar ?>" class="img-responsive fachada"></div>
-<div class="col-md-8">
+<div class="col-md-5"><img src="<?php echo $field_fachada_bar ?>" class="img-responsive fachada"></div>
+<div class="col-md-7">
 <?php
+
+
+
+
+print "<h1>" . $title . "</h1>";
+print render($content['locations']);
+
+print render($content['field_descripcion_bar']);
+
+?>
+</div>
+<div class="col-sm-12"></div>
+
+<div class="col-md-6"></div>
+<div class="col-md-6"><?php 
+
+$field_banda = file_create_url($content['field_banda'][0]['#item']['uri']);
+
+ ?>
+
+<img src="<?php echo $field_banda ?>" class="img-responsive fachada">
+</div>
+
 
 /**
  * @file
