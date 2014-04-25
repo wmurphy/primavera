@@ -1,0 +1,12 @@
+name = Primavera als bars
+description = Custom module
+package = Primavera
+core = 7.x
+dependencies[] = block
+
+; Information added by Drupal.org packaging script on 2014-04-04
+version = "7.x-1.x-dev"
+core = "7.x"
+project = "Primvera"
+datestamp = "1396652050"
+

@@ -104,7 +104,17 @@ img {
 	margin: 0 auto;
 }
 
+ul.nav {
+	text-align: center;
+}
 
+.nav li {
+	display: inline-block;
+}
+
+span.texto {
+	display: block;
+}
 
 
 
