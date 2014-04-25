@@ -122,6 +122,8 @@ span.texto {
 
 .navbar-brand{
 	font-family: 'Planeta Plakat';
+	text-transform: uppercase;
+	color: #eb694a;
 }
 
 
