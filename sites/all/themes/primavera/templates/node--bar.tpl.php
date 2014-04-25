@@ -51,7 +51,7 @@ print render($content['field_descripcion_bar']);
 
 ?>
 </div>
-<div class="col-sm-12"></div>
+<div class="col-sm-12"><?php print render($content['field_fecha_concierto']); ?></div>
 
 <div class="col-md-6"></div>
 <div class="col-md-6"><?php 
