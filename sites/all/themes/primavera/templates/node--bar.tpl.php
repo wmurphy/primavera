@@ -27,13 +27,15 @@
 //echo image_style_url('original', $content['field_fachada_bar'][0]['#item']['uri']);
 $field_fachada_bar_realpath = drupal_realpath($content['field_fachada_bar'][0]['#item']['uri']);
 $field_fachada_bar_path = str_replace($_SERVER['DOCUMENT_ROOT'].'/','',$field_fachada_bar_realpath);
+
+$field_fachada_bar = file_create_url($content['field_fachada_bar'][0]['#item']['uri']);
 //echo $path;
 //echo drupal_realpath($content['field_fachada_bar'][0]['#item']['uri']);
 //var_dump($content['field_fachada_bar'][0]['#item']['uri']);
 //print render($content['field_fachada_bar'][0];
 ?>
 <div class="row">
-<div class="col-md-4"><img src="/<?php echo $field_fachada_bar_path ?>"></div>
+<div class="col-md-4"><img src="/<?php echo $field_fachada_bar ?>"></div>
 <div class="col-md-8">
 <?php
 
