@@ -1,3 +1,20 @@
+<div id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
+
+  <?php print $user_picture; ?>
+
+  <?php print render($title_prefix); ?>
+  <?php if (!$page): ?>
+    <h2<?php print $title_attributes; ?>><a href="<?php print $node_url; ?>"><?php print $title; ?></a></h2>
+  <?php endif; ?>
+  <?php print render($title_suffix); ?>
+
+  <?php if ($display_submitted): ?>
+    <div class="submitted">
+      <?php print $submitted; ?>
+    </div>
+  <?php endif; ?>
+
+  <div class="content"<?php print $content_attributes; ?>>
 <?php
 
 //var_dump($content['field_fachada_bar']);
@@ -7,9 +24,18 @@
 
 //var_dump($content['field_fachada_bar'][0]);
 
-echo image_style_url('original', $content['field_fachada_bar'][0]['uri']);
-
+//echo image_style_url('original', $content['field_fachada_bar'][0]['#item']['uri']);
+$field_fachada_bar_realpath = drupal_realpath($content['field_fachada_bar'][0]['#item']['uri']);
+$field_fachada_bar_path = str_replace($_SERVER['DOCUMENT_ROOT'].'/','',$field_fachada_bar_realpath);
+//echo $path;
+//echo drupal_realpath($content['field_fachada_bar'][0]['#item']['uri']);
+//var_dump($content['field_fachada_bar'][0]['#item']['uri']);
 //print render($content['field_fachada_bar'][0];
+?>
+<div class="row">
+<div class="col-md-4"><img src="/<?php echo $field_fachada_bar_path ?>"></div>
+<div class="col-md-8">
+<?php
 
 /**
  * @file
@@ -91,23 +117,7 @@ echo image_style_url('original', $content['field_fachada_bar'][0]['uri']);
  * @ingroup themeable
  */
 ?>
-<div id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
 
-  <?php print $user_picture; ?>
-
-  <?php print render($title_prefix); ?>
-  <?php if (!$page): ?>
-    <h2<?php print $title_attributes; ?>><a href="<?php print $node_url; ?>"><?php print $title; ?></a></h2>
-  <?php endif; ?>
-  <?php print render($title_suffix); ?>
-
-  <?php if ($display_submitted): ?>
-    <div class="submitted">
-      <?php print $submitted; ?>
-    </div>
-  <?php endif; ?>
-
-  <div class="content"<?php print $content_attributes; ?>>
     <?php
       // We hide the comments and links now so that we can render them later.
       hide($content['comments']);
@@ -119,5 +129,6 @@ echo image_style_url('original', $content['field_fachada_bar'][0]['uri']);
   <?php print render($content['links']); ?>
 
   <?php print render($content['comments']); ?>
+</div></div>
 
 </div>
