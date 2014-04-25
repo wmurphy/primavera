@@ -120,13 +120,11 @@ span.texto {
 	width: 100%;
 }
 
-.navbar-brand{
+.navbar-default .navbar-brand {
 	font-family: 'Planeta Plakat';
 	text-transform: uppercase;
-	color: #eb694a;
+	color: #EB6B4A;
 }
-
-
 
 
 
