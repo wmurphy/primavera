@@ -3,7 +3,9 @@
  * remove this comment and start adding your styles to this file.
  */
 
-
+body, body *{
+	font-family:"Times New Roman", Times, serif;
+}
 .navbar-default, .footer {
 	border-color: #ffffff;
 	background-color: #f3f4ef;
