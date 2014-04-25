@@ -116,6 +116,10 @@ span.texto {
 	display: block;
 }
 
+.thumbnail img {
+	width: 100%;
+}
+
 
 
 
