@@ -35,7 +35,7 @@ $field_fachada_bar = file_create_url($content['field_fachada_bar'][0]['#item']['
 //print render($content['field_fachada_bar'][0];
 ?>
 <div class="row">
-<div class="col-md-4"><img src="/<?php echo $field_fachada_bar ?>"></div>
+<div class="col-md-4"><img src="<?php echo $field_fachada_bar ?>"></div>
 <div class="col-md-8">
 <?php
 
