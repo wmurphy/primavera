@@ -63,7 +63,7 @@ $field_banda = file_create_url($content['field_banda'][0]['#item']['uri']);
 <img src="<?php echo $field_banda ?>" class="img-responsive fachada">
 </div>
 
-
+<?php
 /**
  * @file
  * Default theme implementation to display a node.
