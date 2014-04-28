@@ -37,23 +37,27 @@ $field_fachada_bar = file_create_url($content['field_fachada_bar'][0]['#item']['
 //print render($content['field_fachada_bar'][0];
 ?>
 <div class="row">
-<div class="col-md-5"><img src="<?php echo $field_fachada_bar ?>" class="img-responsive fachada"></div>
-<div class="col-md-7">
-<?php
+  <div class="col-md-5"><img src="<?php echo $field_fachada_bar ?>" class="img-responsive fachada"></div>
+  <div class="col-md-7">
+    <div itemscope itemtype="http://data-vocabulary.org/Organization">
+        <h1 itemprop="name"><?php print $title; ?></h1>
+        <p itemprop="address" itemscope itemtype="http://data-vocabulary.org/Address">
+          <span itemprop="street-address"><?php print $content['locations']["#locations"][0]["street"]; ?></span> - 
+          <span itemprop="postal-code"><?php print $content['locations']["#locations"][0]["postal_code"]; ?></span>
+          <span itemprop="locality"><?php print $content['locations']["#locations"][0]["city"]; ?></span>,
+        </p>
+    </div>
 
+    <?php print $content['field_descripcion_bar']['#items'][0]['value']; ?>
+  </div>
 
-
-
-print "<h1>" . $title . "</h1>";
-print render($content['locations']);
-
-print render($content['field_descripcion_bar']);
-
-?>
 </div>
-<div class="col-sm-12"><?php print render($content['field_fecha_concierto']); ?></div>
+<div class="row">
+<div class="col-sm-12"><h2 class="date"><?php print render($content['field_fecha_concierto']); ?></h2></div>
 
-<div class="col-md-6"></div>
+<div class="col-md-6 grupo">
+  <h2><?php print $content['field_grupo']['#items'][0]['value']; ?></h2>
+  <div class="info"><?php print $content['field_descripcion_concierto']['#items'][0]['value']; ?></div></div>
 <div class="col-md-6"><?php 
 
 $field_banda = file_create_url($content['field_banda'][0]['#item']['uri']);
