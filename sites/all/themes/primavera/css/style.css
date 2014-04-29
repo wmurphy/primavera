@@ -189,6 +189,10 @@ margin-top: 0;
 	font-size: 45px;
 }
 
+.grupo h1 {
+	color: #EB6B4A;
+}
+
 .node-bar .address {
 	font-weight: bold;
 	font-size: 16px;
@@ -197,6 +201,7 @@ margin-top: 0;
 
 .node-bar h2 {
 	font-size: 25px;
+	font-family: 'Planeta Plakat';
 	text-transform: uppercase;
 	text-align: center;
 	color: #EB6B4A;
