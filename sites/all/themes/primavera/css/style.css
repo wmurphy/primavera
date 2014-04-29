@@ -23,7 +23,9 @@ body, body *{
 .navbar-default .navbar-nav>li>a {
 	color: #333;
 	font-weight: 500;
-	font-size: 17px;
+	font-size: 18px;
+	text-transform: uppercase;
+	font-family: 'Planeta Plakat';
 }
 .navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus,	a.active-trail.active{
 	color: #999;
@@ -31,8 +33,6 @@ body, body *{
 }
 
 .navbar-brand {
-	color: #000;
-	font-family: 'Denver';
 	font-weight: bolder;
 	font-size: 35px;
 	padding-top: 40px;
@@ -48,6 +48,13 @@ body, body *{
 
 div.navbar-collapse.collapse {
 	padding: 0 0 15px 0;
+}
+
+a.name.navbar-brand {
+	padding-top: 20px;
+}
+ul.menu.nav.navbar-nav {
+	margin-top: -40px;
 }
 
 a.logo {
@@ -215,9 +222,10 @@ margin-top: 0;
 	background-color: white;
 	font-family: 'Planeta Plakat';
 	padding: 0 4%;
-	top: -15px;
+	top: -26px;
 	position: relative;
 }
+
 
 
 
