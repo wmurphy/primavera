@@ -44,7 +44,7 @@ $field_fachada_bar = file_create_url($content['field_fachada_bar'][0]['#item']['
         <p itemprop="address" itemscope itemtype="http://data-vocabulary.org/Address">
           <span itemprop="street-address"><?php print $content['locations']["#locations"][0]["street"]; ?></span> - 
           <span itemprop="postal-code"><?php print $content['locations']["#locations"][0]["postal_code"]; ?></span>
-          <span itemprop="locality"><?php print $content['locations']["#locations"][0]["city"]; ?></span>,
+          <span itemprop="locality"><?php print $content['locations']["#locations"][0]["city"]; ?></span>
         </p>
     </div>
 

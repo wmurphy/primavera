@@ -124,13 +124,30 @@ span.texto {
 }
 
 
+.barceloneta{
+	top: -234px;
+}
 
+.gracia{
+	top:15px;
+}
+.born, .raval, .gotic, .barceloneta, .gracia{
 
+    background-size: 100% auto;
+	background-repeat: no-repeat;
+	float: left;
+}
 
+.gotic{
+	top: 14px;
+}
 
+.born:hover, .raval:hover, .gotic:hover, .barceloneta:hover, .gracia:hover{
+	transition-duration: 2s;
+	-webkit-transition-duration: 2s;
+}
 
-
-
+.img-responsive{width:100%;}
 
 
 
