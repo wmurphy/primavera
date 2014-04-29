@@ -5,7 +5,11 @@
 
 body, body *{
 	font-family:"Times New Roman", Times, serif;
+	background-image:url('../img/deep_space.png') !important;
+	background-repeat:repeat; 
+	background-attachment: fixed;
 }
+
 .navbar-default, .footer {
 	border-color: #ffffff;
 	background-color: #f3f4ef;
@@ -232,6 +236,11 @@ margin-top: 0;
 }
 
 
+span.texto {
+	font-family: 'Planeta Plakat';
+	font-size: 16px;
+	text-transform: uppercase;
+}
 
 
 
