@@ -1,17 +1,43 @@
 <?php
 
-  hide($content['field_fachada_bar']);
-  hide($content['locations']);
+hide($content['field_fachada_bar']);
+hide($content['locations']);
 
 
-  hide($content['field_descripcion_concierto']);
-  hide($content['field_fecha_concierto']);
-  hide($content['field_grupo']);
+hide($content['field_descripcion_concierto']);
+hide($content['field_fecha_concierto']);
+hide($content['field_grupo']);
 
-  hide($content['field_descripcion_bar']);
-  hide($content['field_barrio']);
-  hide($content['field_grupo']);
-  hide($content['field_banda']);
+hide($content['field_descripcion_bar']);
+hide($content['field_barrio']);
+hide($content['field_grupo']);
+hide($content['field_banda']);
+
+$field_fachada_bar_realpath = drupal_realpath($content['field_fachada_bar'][0]['#item']['uri']);
+$field_fachada_bar_path = str_replace($_SERVER['DOCUMENT_ROOT'].'/','',$field_fachada_bar_realpath);
+$field_fachada_bar = file_create_url($content['field_fachada_bar'][0]['#item']['uri']);
+
+
+
+if ($teaser) {
+  var_dump($node);
+
+echo '<div class="col col-sm-3 col-xs-6">
+      <div class="thumbnail">
+        
+          
+          <h1><span>'. $content['field_fecha_concierto']['#items'][0]['value'] .'</span></h1>    
+          <a href="/node/19"><img src="' . $field_fachada_bar . '" class="img-responsive fachada"></a>    
+          <a href="/node/19">London Bar</a>    
+          <h4 ><span >Germán y la Alegría del Barrio</span></h4>        
+      </div>
+      </div>';
+
+}else{
+
+
+
+
 
 ?><div id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
 
@@ -27,10 +53,7 @@
 //var_dump($content['field_fachada_bar'][0]);
 
 //echo image_style_url('original', $content['field_fachada_bar'][0]['#item']['uri']);
-$field_fachada_bar_realpath = drupal_realpath($content['field_fachada_bar'][0]['#item']['uri']);
-$field_fachada_bar_path = str_replace($_SERVER['DOCUMENT_ROOT'].'/','',$field_fachada_bar_realpath);
 
-$field_fachada_bar = file_create_url($content['field_fachada_bar'][0]['#item']['uri']);
 //echo $path;
 //echo drupal_realpath($content['field_fachada_bar'][0]['#item']['uri']);
 //var_dump($content['field_fachada_bar'][0]['#item']['uri']);
@@ -41,7 +64,7 @@ $field_fachada_bar = file_create_url($content['field_fachada_bar'][0]['#item']['
   <div class="col-md-7">
     <div itemscope itemtype="http://data-vocabulary.org/Organization">
         <h1 itemprop="name"><?php print $title; ?></h1>
-        <p itemprop="address" itemscope itemtype="http://data-vocabulary.org/Address">
+        <p class="address" itemprop="address" itemscope itemtype="http://data-vocabulary.org/Address">
           <span itemprop="street-address"><?php print $content['locations']["#locations"][0]["street"]; ?></span> - 
           <span itemprop="postal-code"><?php print $content['locations']["#locations"][0]["postal_code"]; ?></span>
           <span itemprop="locality"><?php print $content['locations']["#locations"][0]["city"]; ?></span>
@@ -53,7 +76,7 @@ $field_fachada_bar = file_create_url($content['field_fachada_bar'][0]['#item']['
 
 </div>
 <div class="row">
-<div class="col-sm-12"><h2 class="date"><?php print render($content['field_fecha_concierto']); ?></h2></div>
+<div class="col-sm-12"><h2 class="date"><span><?php print render($content['field_fecha_concierto']); ?></span></h2></div>
 
 <div class="col-md-6 grupo">
   <h2><?php print $content['field_grupo']['#items'][0]['value']; ?></h2>
@@ -156,10 +179,8 @@ $field_banda = file_create_url($content['field_banda'][0]['#item']['uri']);
       print render($content);
     ?>
   </div>
-
-  <?php print render($content['links']); ?>
-
-  <?php print render($content['comments']); ?>
 </div></div>
 
 </div>
+
+<?php } ?>

@@ -181,6 +181,21 @@ margin-top: 0;
 	width: auto;
 }
 
+.node-bar h1{
+	font-family: 'Planeta Plakat';
+	color: #7ca575;
+	text-transform: uppercase;
+	margin-top: 0;
+	font-size: 45px;
+}
+
+.node-bar .address {
+	font-weight: bold;
+	font-size: 16px;
+	padding-bottom: 10px;
+}
+
+
 
 
 
