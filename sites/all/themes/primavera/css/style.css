@@ -57,6 +57,11 @@ ul.menu.nav.navbar-nav {
 	margin-top: -40px;
 }
 
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {
+	color: #7ca575;
+	background-color: transparent;
+}
+
 a.logo {
 	float: right !important;
 }
