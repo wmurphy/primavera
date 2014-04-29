@@ -199,9 +199,11 @@ margin-top: 0;
 	font-size: 25px;
 	text-transform: uppercase;
 	text-align: center;
+	color: #EB6B4A;
 	background-color: transparent;
-	border-top: 2px solid black;
+	border-top: 2px solid #EB6B4A;
 	margin: 40px 0 20px 0;
+	font-size: 45px;
 }
 
 .node-bar h2 span {

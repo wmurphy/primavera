@@ -79,7 +79,7 @@ echo '<div class="col col-sm-3 col-xs-6">
 <div class="col-sm-12"><h2 class="date"><span><?php print render($content['field_fecha_concierto']); ?></span></h2></div>
 
 <div class="col-md-6 grupo">
-  <h2><?php print $content['field_grupo']['#items'][0]['value']; ?></h2>
+  <h1><?php print $content['field_grupo']['#items'][0]['value']; ?></h1>
   <div class="info"><?php print $content['field_descripcion_concierto']['#items'][0]['value']; ?></div></div>
 <div class="col-md-6"><?php 
 
