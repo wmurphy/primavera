@@ -86,7 +86,7 @@ function primavera_contents($which_block) {
           <span class="texto">Calendario</span></a>
         </li>
         <li class="barrios">
-          <a href="/"><img src="/img/casas.png">
+          <a href="/barrios"><img src="/img/casas.png">
           <span class="texto">Barrios</span></a>
         </li>
         </ul>',
