@@ -149,21 +149,31 @@ span.texto {
 
 .img-responsive{width:100%;}
 
-.barthumb{
+.barthumb {
 	text-align: center;
-	color: #d06a4d;
+	color: #EB6B4A;
 	font-family: 'Planeta Plakat';
-	
-
+	border: 4px solid #eb6b4a;
+	margin: 10px;
+	width: 22%;
 }
+
 .barthumb a{
-	color: #d06a4d;
+	color: #EB6B4A;
+	font-weight: bolder;
 
 }
 
 .barthumb h1{
 	font-size: 24px;
 	text-transform: uppercase;
+	font-family: 'Planeta Plakat';
+}
+
+.barthumb h4 {
+font-size: 14px;
+font-weight: bolder;
+margin-top: 0;
 }
 
 .barthumb .img-responsive {
