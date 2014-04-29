@@ -5,7 +5,7 @@
 
 body, body *{
 	font-family:"Times New Roman", Times, serif;
-	background-image:url('../img/deep_space.png') !important;
+	background-image:url('/img/puntillos.png') !important;
 	background-repeat:repeat; 
 	background-attachment: fixed;
 }
