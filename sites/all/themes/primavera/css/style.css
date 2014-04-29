@@ -149,11 +149,27 @@ span.texto {
 
 .img-responsive{width:100%;}
 
+.barthumb{
+	text-align: center;
+	color: #d06a4d;
+	font-family: 'Planeta Plakat';
+	
 
+}
+.barthumb a{
+	color: #d06a4d;
 
+}
 
+.barthumb h1{
+	font-size: 24px;
+	text-transform: uppercase;
+}
 
-
+.barthumb .img-responsive {
+	height: 120px;
+	width: auto;
+}
 
 
 
