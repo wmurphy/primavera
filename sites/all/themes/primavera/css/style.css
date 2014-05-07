@@ -16,7 +16,7 @@ body, body *{
 
 .navbar-default, .footer {
 	border-color: #ffffff;
-	background-color: #f3f4ef;
+	background-color: transparent;
 	width: 100%;
 	color: #222;
 }
@@ -52,6 +52,10 @@ body, body *{
 
 .navbar-header {
 	width: 100%;
+}
+div.navbar-header,  .navbar-collapse nav {
+width: 96%;
+padding-left: 10px;
 }
 
 div.navbar-collapse.collapse {
@@ -238,6 +242,29 @@ margin-top: 0;
 	top: -26px;
 	position: relative;
 }
+
+
+
+.node-barrio h1 {
+	font-size: 25px;
+	font-family: 'Planeta Plakat';
+	text-transform: uppercase;
+	text-align: center;
+	color: #7ca575;
+	background-color: transparent;
+	border-top: 2px solid #7ca575;
+	margin: 40px 0 20px 0;
+	font-size: 45px;
+}
+
+.node-barrio h1 span {
+	background-color: white;
+	font-family: 'Planeta Plakat';
+	padding: 0 4%;
+	top: -26px;
+	position: relative;
+}
+
 
 
 span.texto {

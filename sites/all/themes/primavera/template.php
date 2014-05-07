@@ -13,7 +13,23 @@ function primavera_date_display_single($variables){
 	//var_dump($variables['dates']['value']['db']['datetime']);
 	$timestamp = strtotime($variables['dates']['value']['db']['datetime']);
 	//echo $timestamp;
-	return date ('j', $timestamp) . " de " . date ('F', $timestamp);
+
+$mes=date("F", $timestamp);
+if ($mes=="January") $mes="Enero";
+if ($mes=="February") $mes="Febrero";
+if ($mes=="March") $mes="Marzo";
+if ($mes=="April") $mes="Abril";
+if ($mes=="May") $mes="Mayo";
+if ($mes=="June") $mes="Junio";
+if ($mes=="July") $mes="Julio";
+if ($mes=="August") $mes="Agosto";
+if ($mes=="September") $mes="Setiembre";
+if ($mes=="October") $mes="Octubre";
+if ($mes=="November") $mes="Noviembre";
+if ($mes=="December") $mes="Diciembre";
+
+
+	return date ('j', $timestamp) . " de " . $mes;
 
 }
 
